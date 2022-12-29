@@ -28,21 +28,36 @@
     height: 100px;
     background-color: black;
     margin: 10px;
+    border-radius: 50%;
 }
 
 .nav .container ul {
     display: flex;
     background-color: #1B4965;
+    list-style-type: none;
+    
+}
+.nav .container button {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    color: #1B4965;
+    font-weight: bold;
+    transition: .5s;
+    
+}
+
+.nav .container button:hover {
+    color: rgba(231,36,49);
+    box-shadow: 0px 15px 20px rgba(137,209,235, 0.4);
+    transform:translateY(-2px);
+    cursor: pointer;
 }
 
 .nav .container li {
-    background-color: #0f354c;
-    margin: 20px;
-    padding: 10px;
-    list-style-type: none;
-    border-radius: 15px;
-}
+    background-color: #1B4965;
 
+}
 .header .container{
     display: flex;
     color: white;
@@ -81,7 +96,7 @@
 }
 
 .header .container .img2 {
-    background-color: black;
+    background-color: #1B4965;
     margin: 10px;
     padding: 10px;
     width: 200px;
@@ -100,15 +115,30 @@
 .tiles .container .tile {
     width: 250px;
     padding: 10px 20px;
-    margin: 20px 20px;
+    margin: 20px 50px;
     border-radius: 15px;
     background-color: #1B4965;
     text-align: center;
+    border:none;
+    color: white;
+    transition: .5s; 
+    text-shadow: 1px 1px 2px black;
+}
+
+.tiles .container .tile:hover {
+    transform: translate(0px, -2px);
+    box-shadow: 0px 15px 20px rgba(231,36,49, .6);
+    text-shadow: none
+
 }
 
 .tiles .container .tile h3 {
     padding: 10px;
     background-color: #1B4965;
+}
+
+.tiles .container .tile h3:hover {
+    
 }
 
 .tiles .container .tile p {
@@ -140,4 +170,20 @@
 .foot .container ul li {
     background-color: #1B4965;
 
+}
+
+.foot .container ul button {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    transform: .5s;
+    
+}
+
+.foot .container ul button:hover {
+    text-decoration: underline;
 }
